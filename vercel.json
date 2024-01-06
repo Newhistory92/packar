@@ -1,13 +1,12 @@
 {
-    "builds": [
+    "routes":[
       {
-        "src": "package.json",
-        "use": "@vercel/node",
-        "config": {
-          "scripts": {
-            "build": "npm run prisma:generate && npm run build"
-          }
-        }
+        "app":"/",
+        "dest":"/home"
+      },
+      {
+        "app":"/landing",
+        "dest":"/landing"
       }
     ]
   }
